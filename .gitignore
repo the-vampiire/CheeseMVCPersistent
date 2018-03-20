@@ -243,3 +243,10 @@ ModelManifest.xml
 
 # Jetbrains Rider files
 .idea/*
+
+
+# ignore mac .DS_Store
+.DS_Store
+
+# ignore SQLite
+.sqlite
