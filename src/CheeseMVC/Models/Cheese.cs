@@ -9,17 +9,12 @@ namespace CheeseMVC.Models
         public int ID { get; set; }
         
         // this is a FOREIGN KEY [FK]
-            // the ID of the category is stored ON the Cheese table
-            // a Cheese HAS ONE Category 
+            // the ID of the category is stored in rows of Cheese table because a Cheese HAS ONE Category 
             // meaning a Category HAS MANY Cheeses
                 // a ONE to MANY relationship constrained by a foreign key
         public int CategoryID { get; set; }
         
         // the CheeseType enum is replaced by data from the Category table identified by the CategoryID FK
         public CheeseCategory Category { get; set; }
-        
-// TODO: notes on how this relates to the SQL table structure / relationships
-        // BUG: ??represents a list of Cheeses related to a particular Category??
-        public IList<Cheese> Cheeses { get; set; }
     }
 }
